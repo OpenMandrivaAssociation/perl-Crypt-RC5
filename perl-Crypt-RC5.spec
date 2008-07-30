@@ -3,7 +3,7 @@
 Summary:	Crypt-RC5 module for perl 
 Name:		perl-%{real_name}
 Version:	2.00
-Release:	%mkrel 1
+Release:	%mkrel 3
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{real_name}
