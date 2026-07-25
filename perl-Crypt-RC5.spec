@@ -2,14 +2,14 @@
 %define upstream_version 2.00
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	9
+Version:	%{upstream_version}
+Release:	10
 
 Summary:	Crypt-RC5 module for perl 
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	%{upstream_name}-%{upstream_version}.tar.bz2
+Url:		https://metacpan.org/dist/Crypt-RC5
+Source0:	https://cpan.metacpan.org/authors/id/S/SI/SIFUKURT/Crypt-RC5-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
