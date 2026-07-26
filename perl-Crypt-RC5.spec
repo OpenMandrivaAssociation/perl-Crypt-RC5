@@ -1,15 +1,13 @@
 %define upstream_name    Crypt-RC5
-%define upstream_version 2.00
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	10
+Version:	2.00
+Release:	11
 
 Summary:	Crypt-RC5 module for perl 
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/Crypt-RC5
-Source0:	https://cpan.metacpan.org/authors/id/S/SI/SIFUKURT/Crypt-RC5-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/S/SI/SIFUKURT/Crypt-RC5-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -19,7 +17,7 @@ BuildArch:	noarch
 This module is a perl implementation of the RC5 encryption algorithm.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -44,9 +42,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Sun Feb 14 2010 Jérôme Quelin <jquelin@mandriva.org> 2.0.0-5mdv2011.0
 + Revision: 505682
-- rebuild using %%perl_convert_version
-
-* Fri Sep 04 2009 Thierry Vignaud <tv@mandriva.org> 2.00-4mdv2010.0
+- rebuild using %2.00 Fri Sep 04 2009 Thierry Vignaud <tv@mandriva.org> 2.00-4mdv2010.0
 + Revision: 430377
 - rebuild
 
